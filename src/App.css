@@ -54,10 +54,10 @@ input:focus {
   font-family: 'Courier New', Courier, monospace;
   font-size: xxx-large;
   margin: 5px;
-  padding: 3px 8px 3px 5px;
+  padding: 3px 5px;
   text-align: center;
   text-shadow: 0.5px 0.5px 1px black;
-  width: 50px;
+  width: 60px;
 }
 
 .nyan-cat {
@@ -171,10 +171,6 @@ input:focus {
   opacity: 0.3;
   text-shadow: 0.5px 0.3px 3px black;
   width: fit-content;
-}
-
-.info-content b {
-  font-size: smaller;
 }
 
 .info-content:hover {
