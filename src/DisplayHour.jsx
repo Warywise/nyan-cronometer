@@ -5,11 +5,11 @@ class DisplayHourCheck extends Component {
   render() {
     const { curCondition, getCondition } = this.props;
     return (
-      <label className="text-content" htmlFor="view-hour">
-      Utilizar "Horas"
+      <label className="text-content" htmlFor="view-hour-check">
+      Utilizar "Horas" { curCondition ? <b className="view-hour">☑</b> : <b className="hide-hour">☒</b> }
       <input
         type="checkbox"
-        id="view-hour"
+        id="view-hour-check"
         name="viewHour"
         value={ curCondition }
         onChange={ getCondition }

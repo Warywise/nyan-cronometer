@@ -63,11 +63,12 @@ input:focus {
 .nyan-cat {
   animation: nyan 2s infinite linear;
   background-image: url('./images/nyan-cat.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: right;
   bottom: 1px;
-  height: 80px;
-  margin-left: -95%;
+  height: 75px;
+  margin-left: -93%;
   position: absolute;
   transition: linear;
   width: 100vw;
@@ -190,8 +191,19 @@ input:focus {
   max-width: 150px;
 }
 
-#view-hour {
+#view-hour-check {
   opacity: 0;
+}
+
+.view-hour {
+  color: green;
+  font-size: 1.7rem;
+  text-shadow: 0.5px 0.3px 1.5px rgb(178, 243, 213);
+}
+
+.hide-hour {
+  color: darkred;
+  font-size: 1.7rem;
 }
 
 @keyframes textInfo {
@@ -206,4 +218,43 @@ input:focus {
   50% { transform: translateY(-5px) };
   75% { transform: translateY(0) };
   100% { transform: translateY(-10px) };
+}
+
+@media screen and (max-width: 1000px) {
+  .nyan-cat {
+    margin-left: -90%;
+  }
+
+  .time-end {
+    margin-left: 35%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nyan-cat {
+    margin-left: -85%;
+  }
+
+  .time-end {
+    margin-left: 30%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .nyan-cat {
+    margin-left: -77%;
+  }
+
+  .time-end {
+    margin-left: 20%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nyan-cat {
+    height: 120px;
+  }
 }
