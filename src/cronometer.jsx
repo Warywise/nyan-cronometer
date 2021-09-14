@@ -99,9 +99,9 @@ class Cronometer extends Component {
     const values = value.match(/\d/g) ? value.match(/\d/g) : [0, 0];
     const newValue= values.length > 2
       ? +(`${values[values.length - 2]}${values[values.length - 1]}`) : value;
-    const entry = +(newValue) > 59 ? 59 : (isNaN(+(newValue)) ? null : +(newValue));
+    const entry = +(newValue) > 59 ? 59 : newValue;
     this.setState((prevSt) => ({
-      [name]: entry === null ? +(prevSt[name]) : +(entry),
+      [name]: isNaN(+(entry)) ? +(prevSt[name]) : +(entry),
     }));
   };
 
@@ -142,6 +142,7 @@ class Cronometer extends Component {
           { viewHour ? <><TimeComponent
             unit="hour"
             curTime={ +(hour) }
+            ifStart={ start }
             increase={ this.increaseTimer }
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
@@ -150,6 +151,7 @@ class Cronometer extends Component {
           <TimeComponent
             unit="minutes"
             curTime={ +(minutes) }
+            ifStart={ start }
             increase={ this.increaseTimer }
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
@@ -158,6 +160,7 @@ class Cronometer extends Component {
           <TimeComponent
             unit="seconds"
             curTime={ +(seconds) }
+            ifStart={ start }
             increase={ this.increaseTimer }
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
