@@ -31,7 +31,7 @@ button {
 
 .cronometer-box {
   font-size: x-large;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .cronometer {
@@ -148,8 +148,42 @@ button {
   text-shadow: 0.5px 0.3px 3px white;
 }
 
+.text-content::selection {
+  background-color: transparent;
+}
+
+.info-content {
+  animation: textInfo 10s infinite;
+  border: dashed thin transparent;
+  color: whitesmoke;
+  cursor: copy;
+  font-size: calc(10px + 1.5vmin);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 5px auto;
+  opacity: 0.3;
+  text-shadow: 0.5px 0.3px 3px black;
+  width: fit-content;
+}
+
+.info-content b {
+  font-size: smaller;
+}
+
+.info-content:hover {
+  animation: none;
+  opacity: 1;
+}
+
 #view-hour {
   opacity: 0;
+}
+
+@keyframes textInfo {
+  0% { border: dashed thin rgba(128, 128, 128, 0.7) };
+  15% { border: none};
+  85% { border: dashed thin rgba(128, 128, 128, 0.7) };
+  100%  { border: none};
 }
 
 @keyframes nyan {

@@ -4,6 +4,7 @@ import DisplayHourCheck from './DisplayHour';
 import TimeComponent from './timeComponent';
 import TimeIsEnd from './timeIsEnd';
 import BtnComponent from './buttonComponent';
+import Infos from './infos';
 
 class Cronometer extends Component {
   constructor() {
@@ -124,6 +125,8 @@ class Cronometer extends Component {
   render() {
     const { end, start,  viewHour, hour, minutes, seconds } = this.state;
     return (
+      <>
+      <Infos />
       <section className="cronometer-box">
         <DisplayHourCheck curCondition={ viewHour } getCondition={ this.displayHour } />
         <div className="cronometer">
@@ -155,6 +158,7 @@ class Cronometer extends Component {
         <BtnComponent buttonClass="reset-btn" countFunc={ this.resetCounter } content="RESET" />
         { end ? <TimeIsEnd timeEnd={ this.resetCountDown }/> : null }
       </section>
+      </>
     );
   }
 }
