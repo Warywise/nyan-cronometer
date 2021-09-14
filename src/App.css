@@ -63,7 +63,7 @@ button {
   background-repeat: no-repeat;
   bottom: 1px;
   height: 80px;
-  margin-left: -95vw;
+  margin-left: -95%;
   position: absolute;
   transition: linear;
   width: 100vw;

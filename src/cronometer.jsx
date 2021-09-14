@@ -43,12 +43,12 @@ class Cronometer extends Component {
       this.setState({ start: true });
   
       document.querySelector('div.nyan-cat')
-        .style = `transition: ${this.getTotalTime()}s linear; margin-left: 0vw `;
-  
+        .style = `transition: ${this.getTotalTime()}s linear; margin-left: 0`;
+
       clearInterval(this.counterId);
-  
+
       this.counterId = setInterval(() => {
-  
+
         this.setState(({ hour, minutes, seconds }) => (
           seconds > 0 ? { seconds: seconds - 1 }
             : (minutes > 0 ? { minutes: minutes - 1, seconds: 59 }
@@ -56,7 +56,7 @@ class Cronometer extends Component {
                 : { start: false }))
         ));
       }, 1000);
-  
+
       const totalTime = this.getTotalTime();
       this.endTimeId = setTimeout(() => this.timeEndAlarm(), (totalTime + 1.5) * 1000);
     }
@@ -77,7 +77,7 @@ class Cronometer extends Component {
 
   resetCountDown = () => {
     document.querySelector('div.nyan-cat')
-      .style = 'margin-left: -95vw';
+      .style = 'margin-left: -95%';
     this.setState({ end: false });
     this.playNyanAudio().pause();
   }
@@ -98,7 +98,7 @@ class Cronometer extends Component {
     clearInterval(this.counterId);
     clearTimeout(this.endTimeId);
     document.querySelector('div.nyan-cat')
-      .style = `transition: ${this.getTotalTime() / 2}s linear; margin-left: -95vw `;
+      .style = `transition: ${this.getTotalTime() / 2}s linear; margin-left: -95% `;
     this.setState({
       start: false,
     });
@@ -109,7 +109,7 @@ class Cronometer extends Component {
     clearInterval(this.counterId);
     clearTimeout(this.endTimeId);
     document.querySelector('div.nyan-cat')
-      .style = 'transition: 1s linear; margin-left: -95vw';
+      .style = 'transition: 1s linear; margin-left: -95%';
     this.setState({
       end: false,
       start: false,
