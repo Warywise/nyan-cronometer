@@ -150,21 +150,21 @@ class Cronometer extends Component {
         <div className="cronometer">
           { viewHour ? <><TimeComponent
             unit="hour"
-            curTime={ hour }
+            curTime={ +(hour) }
             increase={ this.increaseTimer }
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
           /> : </> : '' }
           <TimeComponent
             unit="minutes"
-            curTime={ minutes }
+            curTime={ +(minutes) }
             increase={ this.increaseTimer }
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
           /> :
           <TimeComponent
             unit="seconds"
-            curTime={ seconds }
+            curTime={ +(seconds) }
             increase={ this.increaseTimer }
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
