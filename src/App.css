@@ -13,6 +13,10 @@ button {
   text-shadow: 0.5px 0.5px 1px black;
 }
 
+input:focus {
+  outline: solid thin;
+}
+
 .App {
   text-align: center;
 }
@@ -31,7 +35,7 @@ button {
 
 .cronometer-box {
   font-size: x-large;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .cronometer {
@@ -127,8 +131,11 @@ button {
   border-radius: 10%;
   font-size: medium;
   font-weight: 600;
-  margin-left: 5vw;
   opacity: 0.9;
+}
+
+.defaul-btn {
+  margin: 15px 25px;
 }
 
 .defaul-btn:hover {
@@ -173,6 +180,18 @@ button {
 .info-content:hover {
   animation: none;
   opacity: 1;
+}
+
+.entry-time {
+  font-weight: 600;
+  margin: 10px;
+  min-height: 1.3em;
+  padding: 5px;
+}
+
+#input-time {
+  font-size: medium;
+  max-width: 150px;
 }
 
 #view-hour {

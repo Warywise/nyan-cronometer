@@ -5,6 +5,7 @@ import TimeComponent from './timeComponent';
 import TimeIsEnd from './timeIsEnd';
 import BtnComponent from './buttonComponent';
 import Infos from './infos';
+import InputOfTime from './InputOfTime';
 
 class Cronometer extends Component {
   constructor() {
@@ -95,6 +96,24 @@ class Cronometer extends Component {
     if (!start) changeTimer(this, event);
   };
 
+  entryTimeValue = () => {
+    const input = document.querySelector('.input-time');
+    const timeValues = input.value.match(/\d{1,2}/ig);
+    if (timeValues.length > 1) {
+      this.setState(timeValues.length > 2
+        ? {
+          hour: timeValues[0],
+          minutes: timeValues[1],
+          seconds: timeValues[2],
+        } : {
+          hour: 0,
+          minutes: timeValues[0],
+          seconds: timeValues[1],
+        });
+      input.value = '';
+    }
+  }
+
   pauseCounter = () => {
     clearInterval(this.counterId);
     clearTimeout(this.endTimeId);
@@ -114,7 +133,6 @@ class Cronometer extends Component {
     this.setState({
       end: false,
       start: false,
-      viewHour: false,
       hour: 0,
       minutes: 0,
       seconds: 0,
@@ -156,7 +174,9 @@ class Cronometer extends Component {
           : <BtnComponent buttonClass="pause-btn" countFunc={ this.pauseCounter } content="Pause" />
         }
         <BtnComponent buttonClass="reset-btn" countFunc={ this.resetCounter } content="RESET" />
-        { end ? <TimeIsEnd timeEnd={ this.resetCountDown }/> : null }
+          { end ? <TimeIsEnd timeEnd={ this.resetCountDown } /> : null }
+          { !start
+            ? <InputOfTime onEntryValue={ this.entryTimeValue } /> : null }
       </section>
       </>
     );
