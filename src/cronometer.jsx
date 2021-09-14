@@ -96,13 +96,13 @@ class Cronometer extends Component {
   };
 
   onChange = ({ target: { name, value } }) => {
-    const values = value.match(/\d/g);
+    const values = value.match(/\d/g) ? value.match(/\d/g) : [0, 0];
     const newValue= values.length > 2
       ? +(`${values[values.length - 2]}${values[values.length - 1]}`) : value;
-    const entry = newValue > 59 ? 59 : newValue;
-    this.setState({
-      [name]: +(entry),
-    });
+    const entry = +(newValue) > 59 ? 59 : (isNaN(+(newValue)) ? null : +(newValue));
+    this.setState((prevSt) => ({
+      [name]: entry === null ? +(prevSt[name]) : +(entry),
+    }));
   };
 
   pauseCounter = () => {
