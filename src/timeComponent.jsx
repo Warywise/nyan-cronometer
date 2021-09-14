@@ -7,7 +7,7 @@ class TimeComponent extends Component {
     return (
       <div>
         <button name={ unit } onMouseDown={ increase } onMouseUp={ clearEv }> ▲ </button>
-        <div className="time-unit">{ curTime }</div>
+        <div className="time-unit">{ curTime < 10 ? '0' + curTime : curTime }</div>
         <button name={ unit } onMouseDown={ decrease } onMouseUp={ clearEv }> ▼ </button>
       </div>
     );

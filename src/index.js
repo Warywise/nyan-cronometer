@@ -8,7 +8,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Route path="/cronometer" component={ App } />
+      <Route path="/nyan-cronometer" component={ App } />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
