@@ -98,7 +98,8 @@ class Cronometer extends Component {
 
   entryTimeValue = () => {
     const input = document.querySelector('.input-time');
-    const timeValues = input.value.match(/\d{1,2}/ig);
+    const timeValues = input.value.match(/\d{1,2}/ig)
+      .map((value) => value > 59 ? 59 : value);
     if (timeValues.length > 1) {
       this.setState(timeValues.length > 2
         ? {
