@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nyan-cronometer/static/css/main.1d8296df.chunk.css",
-    "main.js": "/nyan-cronometer/static/js/main.105036da.chunk.js",
-    "main.js.map": "/nyan-cronometer/static/js/main.105036da.chunk.js.map",
+    "main.css": "/nyan-cronometer/static/css/main.f1ad8330.chunk.css",
+    "main.js": "/nyan-cronometer/static/js/main.9c23372a.chunk.js",
+    "main.js.map": "/nyan-cronometer/static/js/main.9c23372a.chunk.js.map",
     "runtime-main.js": "/nyan-cronometer/static/js/runtime-main.d7909b97.js",
     "runtime-main.js.map": "/nyan-cronometer/static/js/runtime-main.d7909b97.js.map",
     "static/js/2.48ab593c.chunk.js": "/nyan-cronometer/static/js/2.48ab593c.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.2164dc0d.chunk.js": "/nyan-cronometer/static/js/3.2164dc0d.chunk.js",
     "static/js/3.2164dc0d.chunk.js.map": "/nyan-cronometer/static/js/3.2164dc0d.chunk.js.map",
     "index.html": "/nyan-cronometer/index.html",
-    "static/css/main.1d8296df.chunk.css.map": "/nyan-cronometer/static/css/main.1d8296df.chunk.css.map",
+    "static/css/main.f1ad8330.chunk.css.map": "/nyan-cronometer/static/css/main.f1ad8330.chunk.css.map",
     "static/js/2.48ab593c.chunk.js.LICENSE.txt": "/nyan-cronometer/static/js/2.48ab593c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/nyan-cronometer/static/media/nyan_cat_background.db9923c4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d7909b97.js",
     "static/js/2.48ab593c.chunk.js",
-    "static/css/main.1d8296df.chunk.css",
-    "static/js/main.105036da.chunk.js"
+    "static/css/main.f1ad8330.chunk.css",
+    "static/js/main.9c23372a.chunk.js"
   ]
 }
