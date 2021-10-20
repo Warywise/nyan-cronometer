@@ -20,10 +20,13 @@ class Cronometer extends Component {
   }
 
   displayHour = ({ target: { name, checked } }) => {
-    this.setState({
+    const { start } = this.state;
+    if (!start) {
+      this.setState({
       [name]: checked,
       hour: 0,
-    });
+      });
+    }
   };
 
   stopEvents = () => {
@@ -139,7 +142,7 @@ class Cronometer extends Component {
       <section className="cronometer-box">
         <DisplayHourCheck curCondition={ viewHour } getCondition={ this.displayHour } />
         <div className="cronometer">
-          { viewHour ? <><TimeComponent
+          { viewHour && <><TimeComponent
             unit="hour"
             curTime={ +(hour) }
             ifStart={ start }
@@ -147,7 +150,7 @@ class Cronometer extends Component {
             decrease={ this.decreaseTimer }
             clearEv={ this.stopEvents }
             change={ this.onChange }
-          /> : </> : '' }
+          /> : </> }
           <TimeComponent
             unit="minutes"
             curTime={ +(minutes) }
@@ -167,11 +170,12 @@ class Cronometer extends Component {
             change={ this.onChange }
           />
         </div>
-        { !start ? <BtnComponent buttonClass="start-btn" countFunc={ this.countDown } content="Start" />
+        { !start 
+          ? <BtnComponent buttonClass="start-btn" countFunc={ this.countDown } content="Start" />
           : <BtnComponent buttonClass="pause-btn" countFunc={ this.pauseCounter } content="Pause" />
         }
         <BtnComponent buttonClass="reset-btn" countFunc={ this.resetCounter } content="RESET" />
-          { end ? <TimeIsEnd timeEnd={ this.resetCountDown } /> : null }
+          { end && <TimeIsEnd timeEnd={ this.resetCountDown } /> }
       </section>
       </>
     );

@@ -207,17 +207,11 @@ input:focus {
 }
 
 @keyframes textInfo {
-  0% { border: dashed thin rgba(128, 128, 128, 0.7) };
-  15% { border: none};
-  85% { border: dashed thin rgba(128, 128, 128, 0.7) };
-  100%  { border: none};
+  50% { border: dashed thin rgba(128, 128, 128, 0.7) };
 }
 
 @keyframes nyan {
-  0% { transform: translateY(-15px) };
-  50% { transform: translateY(-5px) };
-  75% { transform: translateY(0) };
-  100% { transform: translateY(-10px) };
+  50% { transform: translateY(-25px) };
 }
 
 @media screen and (max-width: 1000px) {

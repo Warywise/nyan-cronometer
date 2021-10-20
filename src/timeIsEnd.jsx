@@ -9,7 +9,9 @@ class TimeIsEnd extends Component {
         O Tempo Acabou!<br/>
         Nyan Cat já<br/>atravessou a galáxia!
         <div>
-          <button className="time-end-btn" onClick={ timeEnd }>Recomeçar Jornada!</button>
+          <button className="time-end-btn" onClick={ timeEnd }>
+            Recomeçar Jornada!
+          </button>
         </div>
       </div>
     );
