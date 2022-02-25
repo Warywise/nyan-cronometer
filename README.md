@@ -1,4 +1,4 @@
-# Nyan Catrometer
+# Nyan Catrometer ✨🏳️‍🌈🐱
 
   App criado utilizando _React_.
   O desafio foi criar um cronômetro capaz de despertar no tempo configurado, onde fosse possível regular estas configurações de forma fácil e simples, e tudo isso com uma temática bem criativa e diferenciada.
