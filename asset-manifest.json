@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/nyan-cronometer/static/css/main.f1ad8330.chunk.css",
-    "main.js": "/nyan-cronometer/static/js/main.9c23372a.chunk.js",
-    "main.js.map": "/nyan-cronometer/static/js/main.9c23372a.chunk.js.map",
-    "runtime-main.js": "/nyan-cronometer/static/js/runtime-main.d7909b97.js",
-    "runtime-main.js.map": "/nyan-cronometer/static/js/runtime-main.d7909b97.js.map",
-    "static/js/2.48ab593c.chunk.js": "/nyan-cronometer/static/js/2.48ab593c.chunk.js",
-    "static/js/2.48ab593c.chunk.js.map": "/nyan-cronometer/static/js/2.48ab593c.chunk.js.map",
-    "static/js/3.2164dc0d.chunk.js": "/nyan-cronometer/static/js/3.2164dc0d.chunk.js",
-    "static/js/3.2164dc0d.chunk.js.map": "/nyan-cronometer/static/js/3.2164dc0d.chunk.js.map",
+    "main.css": "/nyan-cronometer/static/css/main.bcec000b.chunk.css",
+    "main.js": "/nyan-cronometer/static/js/main.85a8b80c.chunk.js",
+    "main.js.map": "/nyan-cronometer/static/js/main.85a8b80c.chunk.js.map",
+    "runtime-main.js": "/nyan-cronometer/static/js/runtime-main.ea568e9c.js",
+    "runtime-main.js.map": "/nyan-cronometer/static/js/runtime-main.ea568e9c.js.map",
+    "static/js/2.abbe5bb2.chunk.js": "/nyan-cronometer/static/js/2.abbe5bb2.chunk.js",
+    "static/js/2.abbe5bb2.chunk.js.map": "/nyan-cronometer/static/js/2.abbe5bb2.chunk.js.map",
+    "static/js/3.8c80b4e9.chunk.js": "/nyan-cronometer/static/js/3.8c80b4e9.chunk.js",
+    "static/js/3.8c80b4e9.chunk.js.map": "/nyan-cronometer/static/js/3.8c80b4e9.chunk.js.map",
     "index.html": "/nyan-cronometer/index.html",
-    "static/css/main.f1ad8330.chunk.css.map": "/nyan-cronometer/static/css/main.f1ad8330.chunk.css.map",
-    "static/js/2.48ab593c.chunk.js.LICENSE.txt": "/nyan-cronometer/static/js/2.48ab593c.chunk.js.LICENSE.txt",
+    "static/css/main.bcec000b.chunk.css.map": "/nyan-cronometer/static/css/main.bcec000b.chunk.css.map",
+    "static/js/2.abbe5bb2.chunk.js.LICENSE.txt": "/nyan-cronometer/static/js/2.abbe5bb2.chunk.js.LICENSE.txt",
+    "static/media/Nyan_Cat.fe4bf35c.mp3": "/nyan-cronometer/static/media/Nyan_Cat.fe4bf35c.mp3",
     "static/media/App.css": "/nyan-cronometer/static/media/nyan_cat_background.db9923c4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7909b97.js",
-    "static/js/2.48ab593c.chunk.js",
-    "static/css/main.f1ad8330.chunk.css",
-    "static/js/main.9c23372a.chunk.js"
+    "static/js/runtime-main.ea568e9c.js",
+    "static/js/2.abbe5bb2.chunk.js",
+    "static/css/main.bcec000b.chunk.css",
+    "static/js/main.85a8b80c.chunk.js"
   ]
 }
